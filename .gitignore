@@ -1,0 +1,5 @@
+/node_modules
+*.iml
+*.ds
+*.DS_Store
+*.env
