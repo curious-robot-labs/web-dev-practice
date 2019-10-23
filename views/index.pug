@@ -1,5 +1,7 @@
 extends layout
+include mixins
 
 block content
+  +header(true, "Curious Robot")
   h1= title
   p Welcome to #{title}

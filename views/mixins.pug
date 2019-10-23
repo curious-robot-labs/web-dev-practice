@@ -1,0 +1,13 @@
+mixin header(displayInfo, username)
+    div
+        div(class="header")
+            div(style="display:flex; justify-content:space-between;")
+                if(displayInfo)
+                    if(username)
+                        div(style="padding:0px 100px 0px 50px; display:flex; justify-content:space-around; flex-grow:1;")
+                            div #{username}
+                            div(style="padding:10px; cursor:pointer; color:#316b59; font-weight:700;" onclick="window.location='/dashboard'") dashboard
+                            div(style="padding:10px; cursor:pointer; color:#316b59; font-weight:700;" onclick="window.location='/forum'") Forum
+                            div(style="padding:10px; cursor:pointer; color:#316b59; font-weight:700;" onclick="window.location='/account'") Account
+                    else
+                        div(style="padding:0px 100px 0px 50px; display:flex; justify-content:flex-end; flex-grow:1;")
